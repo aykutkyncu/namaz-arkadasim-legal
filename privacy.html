@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Namaz Arkadaşım</title>
+<style>
+  :root { --bg:#f6f4ef; --fg:#0b1a33; --muted:#5b6475; --gold:#d4a853; --card:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0b1a33; --fg:#eef1f6; --muted:#a9b3c4; --card:#13264a; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:19px; margin:32px 0 8px; border-left:3px solid var(--gold); padding-left:10px; }
+  .muted { color:var(--muted); font-size:14px; }
+  .card { background:var(--card); border-radius:14px; padding:16px 20px; margin-top:20px; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  th, td { text-align:left; padding:8px 6px; border-bottom:1px solid rgba(128,128,128,.2); vertical-align:top; }
+  a { color:inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gizlilik Politikası</h1>
+  <p class="muted">Namaz Arkadaşım (iOS ve Android) · Son güncelleme: 26 Ekim 2026</p>
+
+  <div class="card">
+    <strong>Kısaca:</strong> Hesap açmanız gerekmez. Reklam ya da takip yoktur; iOS sürümünde analitik de yoktur.
+    Verileriniz (kaza sayıları, zikirler, kayıtlı ayetler, ayarlar) yalnızca telefonunuzda durur.
+    Bazı özellikler çalışabilmek için aşağıda listelenen servislere istek gönderir.
+  </div>
+
+  <h2>Hangi veriler, nereye gider?</h2>
+  <table>
+    <tr><th>Veri</th><th>Neden</th><th>Gönderildiği yer</th></tr>
+    <tr><td>Konum (enlem/boylam)</td><td>Namaz vakitleri, kıble yönü ve hava durumu</td><td>Aladhan (namaz vakitleri), Open-Meteo (hava durumu)</td></tr>
+    <tr><td>Hocaya Sor soruları ve rüya anlatımları</td><td>Yapay zekâ cevabı üretmek</td><td>Sunucumuzdaki fonksiyon (Supabase) üzerinden Google Gemini</td></tr>
+    <tr><td>Satın alma</td><td>Premium abonelik</td><td>Apple App Store / Google Play</td></tr>
+    <tr><td>Uygulama kullanım istatistikleri ve çökme raporları (yalnızca Android)</td><td>Hataları bulup düzeltmek, uygulamayı iyileştirmek</td><td>Google Firebase (Analytics, Crashlytics)</td></tr>
+  </table>
+  <p>Android'deki Firebase verileri anonimdir: adınız, e-postanız ya da konumunuz gönderilmez; cihaz modeli, işletim sistemi sürümü, hangi ekranların açıldığı ve çökme anındaki teknik bilgiler gibi veriler toplanır. Google'ın bu verileri nasıl işlediği için <a href="https://firebase.google.com/support/privacy">Firebase gizlilik sayfası</a>'na bakabilirsiniz.</p>
+  <p>Kur'an metni ve sesleri (AlQuran Cloud, Islamic Network), ezan sesleri (Aladhan) ve zekât hesaplayıcıdaki altın ve döviz kurları (gold-api, Frankfurter) indirilirken kişisel bir veri gönderilmez.</p>
+
+  <h2>Konum</h2>
+  <p>Konum izni vermek zorunlu değildir; vermezseniz şehrinizi elle seçebilirsiniz. Konumunuz yalnızca vakit, kıble ve hava durumu hesaplamak için kullanılır, adınızla ya da bir hesapla eşleştirilmez ve bizim tarafımızdan saklanmaz.</p>
+
+  <h2>Hocaya Sor ve Rüya Tabiri</h2>
+  <p>Yazdığınız metin, cevap üretilmesi için Google Gemini'ye iletilir. Sorularınızı kimliğinizle eşleştirmeyiz ve kendi sunucumuzda saklamayız. Google'ın bu verileri nasıl işlediği için <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>'na bakabilirsiniz. Lütfen sorularınıza ad, telefon numarası gibi kişisel bilgiler yazmayın. Sohbet geçmişi yalnızca telefonunuzda tutulur; "Gizli sohbet" açıkken hiç kaydedilmez. Cevaplar bilgi amaçlıdır, fetva yerine geçmez.</p>
+
+  <h2>Satın almalar</h2>
+  <p>Premium abonelik Apple veya Google üzerinden yapılır. Ödeme bilgileriniz bize ulaşmaz; uygulama yalnızca aboneliğin etkin olup olmadığını öğrenir. Aboneliğinizi telefonunuzun ayarlarından yönetebilir veya iptal edebilirsiniz.</p>
+
+  <h2>Telefonunuzda saklanan veriler</h2>
+  <p>Kaza ve oruç sayıları, namaz kayıtları, zikirler, kayıtlı ayet ve dualar, alışkanlıklar ve ayarlar yalnızca cihazınızda durur. "Yedekleme" ile oluşturduğunuz dosya da sizin seçtiğiniz yere (ör. iCloud Drive) kaydedilir; bize gönderilmez. Uygulamayı silmek bu verilerin tamamını siler.</p>
+
+  <h2>Bildirimler</h2>
+  <p>Ezan ve hatırlatma bildirimleri telefonunuzda planlanır; bildirim için herhangi bir sunucuya veri gönderilmez.</p>
+
+  <h2>Çocuklar</h2>
+  <p>Uygulama her yaşa uygundur ve bilerek çocuklardan kişisel veri toplamaz.</p>
+
+  <h2>Değişiklikler</h2>
+  <p>Bu politika değişirse bu sayfadaki tarih güncellenir.</p>
+
+  <h2>İletişim</h2>
+  <p>Sorularınız için: <a href="mailto:aykutkoyuncu10@gmail.com">aykutkoyuncu10@gmail.com</a></p>
+</main>
+</body>
+</html>
