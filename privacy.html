@@ -24,7 +24,7 @@
   <p class="muted">Namaz Arkadaşım (iOS ve Android) · Son güncelleme: 26 Ekim 2026</p>
 
   <div class="card">
-    <strong>Kısaca:</strong> Hesap açmanız gerekmez. Reklam ya da takip yoktur; iOS sürümünde analitik de yoktur.
+    <strong>Kısaca:</strong> Hesap açmanız gerekmez. Reklam ya da takip yoktur; iOS sürümünde kullanım analitiği de yoktur, yalnızca çökme raporları toplanır.
     Verileriniz (kaza sayıları, zikirler, kayıtlı ayetler, ayarlar) yalnızca telefonunuzda durur.
     Bazı özellikler çalışabilmek için aşağıda listelenen servislere istek gönderir.
   </div>
@@ -35,16 +35,18 @@
     <tr><td>Konum (enlem/boylam)</td><td>Namaz vakitleri, kıble yönü ve hava durumu</td><td>Aladhan (namaz vakitleri), Open-Meteo (hava durumu)</td></tr>
     <tr><td>Hocaya Sor soruları ve rüya anlatımları</td><td>Yapay zekâ cevabı üretmek</td><td>Sunucumuzdaki fonksiyon (Supabase) üzerinden Google Gemini</td></tr>
     <tr><td>Satın alma</td><td>Premium abonelik</td><td>Apple App Store / Google Play</td></tr>
-    <tr><td>Uygulama kullanım istatistikleri ve çökme raporları (yalnızca Android)</td><td>Hataları bulup düzeltmek, uygulamayı iyileştirmek</td><td>Google Firebase (Analytics, Crashlytics)</td></tr>
+    <tr><td>Çökme raporları (iOS ve Android)</td><td>Uygulamanın neden kapandığını bulup düzeltmek</td><td>Google Firebase Crashlytics</td></tr>
+    <tr><td>Anonim cihaz kimliği ve IP adresi (karma olarak)</td><td>Hocaya Sor'da günlük kötüye kullanım sınırı</td><td>Sunucumuz (Supabase); 2 gün içinde silinir</td></tr>
+    <tr><td>Uygulama kullanım istatistikleri (yalnızca Android)</td><td>Hataları bulup düzeltmek, uygulamayı iyileştirmek</td><td>Google Firebase (Analytics, Crashlytics)</td></tr>
   </table>
-  <p>Android'deki Firebase verileri anonimdir: adınız, e-postanız ya da konumunuz gönderilmez; cihaz modeli, işletim sistemi sürümü, hangi ekranların açıldığı ve çökme anındaki teknik bilgiler gibi veriler toplanır. Google'ın bu verileri nasıl işlediği için <a href="https://firebase.google.com/support/privacy">Firebase gizlilik sayfası</a>'na bakabilirsiniz.</p>
+  <p>Çökme raporları ve Android'deki Firebase verileri anonimdir: adınız, e-postanız ya da konumunuz gönderilmez; cihaz modeli, işletim sistemi sürümü, hangi ekranların açıldığı ve çökme anındaki teknik bilgiler gibi veriler toplanır. Google'ın bu verileri nasıl işlediği için <a href="https://firebase.google.com/support/privacy">Firebase gizlilik sayfası</a>'na bakabilirsiniz.</p>
   <p>Kur'an metni ve sesleri (AlQuran Cloud, Islamic Network), ezan sesleri (Aladhan) ve zekât hesaplayıcıdaki altın ve döviz kurları (gold-api, Frankfurter) indirilirken kişisel bir veri gönderilmez.</p>
 
   <h2>Konum</h2>
   <p>Konum izni vermek zorunlu değildir; vermezseniz şehrinizi elle seçebilirsiniz. Konumunuz yalnızca vakit, kıble ve hava durumu hesaplamak için kullanılır, adınızla ya da bir hesapla eşleştirilmez ve bizim tarafımızdan saklanmaz.</p>
 
   <h2>Hocaya Sor ve Rüya Tabiri</h2>
-  <p>Yazdığınız metin, cevap üretilmesi için Google Gemini'ye iletilir. Sorularınızı kimliğinizle eşleştirmeyiz ve kendi sunucumuzda saklamayız. Google'ın bu verileri nasıl işlediği için <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>'na bakabilirsiniz. Lütfen sorularınıza ad, telefon numarası gibi kişisel bilgiler yazmayın. Sohbet geçmişi yalnızca telefonunuzda tutulur; "Gizli sohbet" açıkken hiç kaydedilmez. Cevaplar bilgi amaçlıdır, fetva yerine geçmez.</p>
+  <p>Yazdığınız metin, cevap üretilmesi için Google Gemini'ye iletilir. Sorularınızı kimliğinizle eşleştirmeyiz ve kendi sunucumuzda saklamayız. Kötüye kullanımı önlemek için yalnızca günlük soru sayısı, cihaz kimliğinin ve IP adresinin geri döndürülemez karması (hash) ile birlikte en fazla 2 gün tutulur. Google'ın bu verileri nasıl işlediği için <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>'na bakabilirsiniz. Lütfen sorularınıza ad, telefon numarası gibi kişisel bilgiler yazmayın. Sohbet geçmişi yalnızca telefonunuzda tutulur; "Gizli sohbet" açıkken hiç kaydedilmez. Cevaplar bilgi amaçlıdır, fetva yerine geçmez.</p>
 
   <h2>Satın almalar</h2>
   <p>Premium abonelik Apple veya Google üzerinden yapılır. Ödeme bilgileriniz bize ulaşmaz; uygulama yalnızca aboneliğin etkin olup olmadığını öğrenir. Aboneliğinizi telefonunuzun ayarlarından yönetebilir veya iptal edebilirsiniz.</p>
